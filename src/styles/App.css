@@ -1,0 +1,44 @@
+:root {
+  --very-dark-blue: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --box-shadow: 0 0 10px #e6e6e6;
+  --box-shadow-hover:  0 0 10px #bcbcbc;
+  --box-shadow-back-button :0 0 10px #898989;
+  --font: "Nunito Sans", sans-serif;
+}
+
+html {font-family: var(--font);font-size: 62.5%;}
+
+.is-dark {
+  --white: hsl(209, 23%, 22%);
+  --very-light-gray: hsl(207, 26%, 17%);
+  --box-shadow: 0 0 10px #222;
+  --box-shadow-hover: 0 0 10px #666;
+  --box-shadow-back-button :0 0 10px #222
+}
+
+.app {background: var(--very-light-gray);min-height: 100vh;}
+.d-none {display: none}
+
+.is-dark .main .search-wrapper input, .is-dark .main .search-wrapper input::placeholder {color: white;}
+.is-dark .header .header-title {color: white;}
+.is-dark .header .button-text {color: white;}
+.is-dark .countries-wrapper .country-name {color: white;}
+.is-dark .countries-wrapper .country-details {color: white;}
+.is-dark .icon svg * {stroke: white;}
+.is-dark .country-page .button.back-button {color: white;}
+.is-dark .country-data {color: white;}
+.is-dark .icon svg * {stroke: white;}
+.is-dark .country-data {color: white;}
+.is-dark .ant-select-dropdown {background: var(--white) !important;}
+.is-dark .ant-select-selector {background: var(--white) !important;border-color: var(--white) !important;}
+.is-dark .ant-select-selection-placeholder {color: white !important;}
+.is-dark .ant-select-arrow {color: white;}
+.is-dark .ant-select-dropdown.ant-select-dropdown-hidden.ant-select-dropdown-placement-bottomLeft > div {background:var(--white) !important}
+.is-dark .rc-virtual-list {background-color: var(--white) !important;}
+.is-dark .ant-select-item-option-content {color: white;}
+.is-dark .ant-select-selection-item {color: white;}
+.is-dark .main .ant-select-selection-placeholder {color: white !important;}
+.is-dark .ant-spin-dot-item {background-color: white !important;}

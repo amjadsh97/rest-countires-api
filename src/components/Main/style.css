@@ -1,0 +1,54 @@
+.main {margin-top: 50px;background: var(--very-light-gray);}
+.main .main-container {max-width: 1280px;margin-inline: auto;}
+.main .search-wrapper {flex-basis: 480px;box-shadow: var(--box-shadow);border-radius: 10px;overflow: hidden;}
+.main .search-wrapper input {border: unset;padding: 20.3px;outline: unset;width: 100%;background: transparent}
+.main .search-wrapper label {display: flex;align-items: center;background: var(--white);padding: 0 30px;height: 100%}
+.main .control-wrapper {display: flex;justify-content: space-between;}
+.main .ant-select-selection-placeholder {color: black !important;}
+.spin-wrapper {position: fixed;left: 50%;top: 50%;transform: translate(-50%, 50%);}
+.ant-spin-dot-item {background-color: black !important;}
+
+/*country component*/
+.countries-wrapper {--auto:auto-fit;display: grid;grid-template-columns: repeat(var(--auto), minmax(200px, 1fr));gap: 75px;margin-top: 50px;padding-bottom: 50px;}
+.countries-wrapper.filtered-layout {--auto:auto-fill;}
+.countries-wrapper .image-wrapper {position: relative;padding-bottom: 59%;}
+.countries-wrapper .image-wrapper img {position: absolute;inset: 0;height: 100%;width: 100%;}
+.countries-wrapper .country-wrapper {padding: 25px;}
+.countries-wrapper .country-name {font-size: 1.6rem;font-weight: 800;margin-bottom: 20px;}
+.countries-wrapper .country-details {font-size: 1.4rem;}
+.countries-wrapper .country-details .item {display: flex;align-items: center;gap: 4px;}
+.countries-wrapper .country-details > * + * {margin-top: 10px;}
+.countries-wrapper .item-key {font-weight: 600;}
+.countries-wrapper .item-value {font-weight: 100;}
+.countries-wrapper .country-item {background: var(--white);border-radius: 5px;overflow: hidden;box-shadow: var(--box-shadow);cursor: pointer;transition: 0.4s}
+.countries-wrapper .country-item:hover {box-shadow: var(--box-shadow-hover);}
+
+
+/*country page*/
+.country-page .button.back-button {display: flex;align-items: center;gap: 10px;box-shadow: var(--box-shadow-back-button);border-radius: 7px;padding: 12px 40px;font-size: 1.4rem;transition: 0.4s ease-in}
+.country-page .button.back-button:hover {box-shadow: var(--box-shadow-hover)}
+.country-page .button.back-button img {width: 16px;height: 16px;}
+.country-page .country-details-wrapper {display: flex;gap: 120px;margin-top: 80px;}
+.country-page .flag {width: 45%;aspect-ratio: 4/3;position: relative;overflow: hidden;max-width: 560px;}
+.country-page .flag img {position: absolute;inset: 0;width: 100%;height: 100%;object-fit: contain;object-position: top;}
+.country-page .country-name {font-size: 2.8rem;font-weight: 800;}
+.country-page .list-row {display: flex;gap: 140px;}
+.country-page .list-items .item .value {font-weight: 100;}
+.country-page .list-items {font-size: 1.4rem;margin-top: 20px;}
+.country-page .list-items .item {display: flex;align-items: center;gap: 6px;}
+.country-page .list-items > * + * {margin-top: 10px;}
+.country-page .languages {display: flex;gap: 5px;}
+.country-page .languages li {font-weight: 100;}
+.country-page .list-items  .item.currencies {flex-wrap: wrap;}
+.country-page .list-items .item.currencies span {font-weight: 100;}
+.country-page .border-countries {display: flex;align-items: center;margin-top: 80px;font-size: 1.4rem;gap: 20px;}
+.country-page .border-countries .title {font-size: 1.4rem;flex-shrink: 0}
+.country-page .border-country-item {font-weight: 100;box-shadow: var(--box-shadow);padding: 10.5px 41px;font-size: 1.2rem;border-radius: 4px;}
+.country-page .border-countries-wrapper {display: flex;gap: 10px;flex-wrap: wrap}
+
+
+@media (max-width: 767px) {
+  .main .control-wrapper {flex-wrap: wrap;gap: 50px;}
+  .main {padding-inline: 20px;margin-top: 30px;}
+  .countries-wrapper {margin-top: 40px;gap: 50px;}
+}

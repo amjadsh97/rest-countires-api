@@ -1,0 +1,9 @@
+.header {display: flex;justify-content: space-between;align-items: center;padding: 25px 80px;box-shadow: var(--box-shadow);background: var(--white)}
+.header .header-title {font-size: clamp(2rem,5vw,2.4rem);font-weight: 800;}
+.header .theme-button {display: flex;align-items: center;gap: 6px;}
+.header .button-text {font-size: clamp(1.4rem,4vw,1.6rem);}
+.header .icon img {width: 16px;height: 16px;}
+
+@media (max-width: 767px) {
+  .header {padding: 40px 20px;}
+}

@@ -1,8 +1,8 @@
 :root {
   --very-dark-blue: hsl(200, 15%, 8%);
   --dark-gray: hsl(0, 0%, 52%);
-  --very-light-gray: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
+  --bg-2: hsl(0, 0%, 98%);
+  --bg-1: hsl(0, 0%, 100%);
   --box-shadow: 0 0 10px #e6e6e6;
   --box-shadow-hover:  0 0 10px #bcbcbc;
   --box-shadow-back-button :0 0 10px #898989;
@@ -12,14 +12,14 @@
 html {font-family: var(--font);font-size: 62.5%;}
 
 .is-dark {
-  --white: hsl(209, 23%, 22%);
-  --very-light-gray: hsl(207, 26%, 17%);
+  --bg-1: hsl(209, 23%, 22%);
+  --bg-2: hsl(207, 26%, 17%);
   --box-shadow: 0 0 10px #222;
   --box-shadow-hover: 0 0 10px #666;
   --box-shadow-back-button :0 0 10px #222
 }
 
-.app {background: var(--very-light-gray);min-height: 100vh;}
+.app {background: var(--bg-2);min-height: 100vh;}
 .d-none {display: none}
 
 .is-dark .main .search-wrapper input, .is-dark .main .search-wrapper input::placeholder {color: white;}
@@ -32,12 +32,12 @@ html {font-family: var(--font);font-size: 62.5%;}
 .is-dark .country-data {color: white;}
 .is-dark .icon svg * {stroke: white;}
 .is-dark .country-data {color: white;}
-.is-dark .ant-select-dropdown {background: var(--white) !important;}
-.is-dark .ant-select-selector {background: var(--white) !important;border-color: var(--white) !important;}
+.is-dark .ant-select-dropdown {background: var(--bg-1) !important;}
+.is-dark .ant-select-selector {background: var(--bg-1) !important;border-color: var(--bg-1) !important;}
 .is-dark .ant-select-selection-placeholder {color: white !important;}
 .is-dark .ant-select-arrow {color: white;}
-.is-dark .ant-select-dropdown.ant-select-dropdown-hidden.ant-select-dropdown-placement-bottomLeft > div {background:var(--white) !important}
-.is-dark .rc-virtual-list {background-color: var(--white) !important;}
+.is-dark .ant-select-dropdown.ant-select-dropdown-hidden.ant-select-dropdown-placement-bottomLeft > div {background:var(--bg-1) !important}
+.is-dark .rc-virtual-list {background-color: var(--bg-1) !important;}
 .is-dark .ant-select-item-option-content {color: white;}
 .is-dark .ant-select-selection-item {color: white;}
 .is-dark .main .ant-select-selection-placeholder {color: white !important;}

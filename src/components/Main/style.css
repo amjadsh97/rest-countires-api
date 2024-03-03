@@ -1,8 +1,8 @@
-.main {margin-top: 50px;background: var(--very-light-gray);}
+.main {margin-top: 50px;background: var(--bg-2);}
 .main .main-container {max-width: 1280px;margin-inline: auto;}
 .main .search-wrapper {flex-basis: 480px;box-shadow: var(--box-shadow);border-radius: 10px;overflow: hidden;}
 .main .search-wrapper input {border: unset;padding: 20.3px;outline: unset;width: 100%;background: transparent}
-.main .search-wrapper label {display: flex;align-items: center;background: var(--white);padding: 0 30px;height: 100%}
+.main .search-wrapper label {display: flex;align-items: center;background: var(--bg-1);padding: 0 30px;height: 100%}
 .main .control-wrapper {display: flex;justify-content: space-between;}
 .main .ant-select-selection-placeholder {color: black !important;}
 .spin-wrapper {position: fixed;left: 50%;top: 50%;transform: translate(-50%, 50%);}
@@ -20,7 +20,7 @@
 .countries-wrapper .country-details > * + * {margin-top: 10px;}
 .countries-wrapper .item-key {font-weight: 600;}
 .countries-wrapper .item-value {font-weight: 100;}
-.countries-wrapper .country-item {background: var(--white);border-radius: 5px;overflow: hidden;box-shadow: var(--box-shadow);cursor: pointer;transition: 0.4s}
+.countries-wrapper .country-item {background: var(--bg-1);border-radius: 5px;overflow: hidden;box-shadow: var(--box-shadow);cursor: pointer;transition: 0.4s}
 .countries-wrapper .country-item:hover {box-shadow: var(--box-shadow-hover);}
 
 
@@ -48,7 +48,14 @@
 
 
 @media (max-width: 767px) {
-  .main .control-wrapper {flex-wrap: wrap;gap: 50px;}
+  .main .control-wrapper {flex-wrap: wrap;gap: 30px;}
   .main {padding-inline: 20px;margin-top: 30px;}
   .countries-wrapper {margin-top: 40px;gap: 50px;}
+  .country-page .country-details-wrapper {flex-direction: column;gap: 40px;margin-top: 50px;padding-bottom: 40px;}
+  .country-page .flag img {object-fit: initial;}
+  .country-page .flag {width: 100%;aspect-ratio: 6/3;}
+  .country-page .list-row {gap: 30px;flex-direction: column;margin-top: 20px;}
+  .country-page .list-items {margin-top: 0;}
+  .country-page .border-countries {flex-direction: column;align-items: start;margin-top: 40px;}
+
 }

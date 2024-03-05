@@ -31,7 +31,7 @@ const Header = () => {
 					<span className="icon">
 						{moonIcon}
 					</span>
-					<span className='button-text'>Dark Mood</span>
+					<span className='button-text'>Dark mode</span>
 				</button>
 			</header>
 		</div>
